@@ -1,11 +1,11 @@
 {
   "name": "yellowcake",
-  "HomePage": "https://yellowcake.netlify.com/",
+"homepage": "https://shelleycavaness.github.io/yellowcake",
   "description": "An opinionated starter project for creating lightning-fast websites with Gatsby v2 and Netlify CMS v2",
   "version": "2.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thriveweb/yellowcake"
+    "url": "https://github.com/shelleycavaness/yellowcake"
   },
   "dependencies": {
     "@reach/router": "^1.2.1",
@@ -51,9 +51,12 @@
     "develop": "gatsby develop",
     "clean": "gatsby clean",
     "serve": "gatsby serve",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\""
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
+    "predeploy": "gatsby build",
+    "deploy": "gh-pages -d public"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "prettier": "^1.18.2",
     "sass": "^1.32.8"
   }

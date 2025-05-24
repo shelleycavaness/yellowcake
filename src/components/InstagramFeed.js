@@ -44,7 +44,7 @@ export default class InstagramFeed extends Component {
 
     if (!instaFeed) {
       typeof window !== 'undefined' &&
-        fetch(`https://instagramapi.thrivex.io/?ref=${this.props.accessToken}`)
+        fetch(`https://instagramapi.XXXXXXfix_me_X.io/?ref=${this.props.accessToken}`)
           .then(res => res.json())
           .then(data => {
             instaFeed = data && data.items ? data.items : []
