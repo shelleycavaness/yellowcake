@@ -1,6 +1,6 @@
 {
   "name": "yellowcake",
-"homepage": "https://shelleycavaness.github.io/yellowcake",
+  "homepage": "https://shelleycavaness.github.io/yellowcake",
   "description": "An opinionated starter project for creating lightning-fast websites with Gatsby v2 and Netlify CMS v2",
   "version": "2.0.0",
   "repository": {

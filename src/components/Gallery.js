@@ -26,7 +26,7 @@ export default class Gallery extends Component {
     loaded: false,
     isOpen: false,
     sliderImages: [],
-    index: 0
+    index: 0,
   }
 
   isOpen(isOpen, index) {
@@ -50,10 +50,10 @@ export default class Gallery extends Component {
             src: img.image,
             title: img.title,
             w: result.width,
-            h: result.height
+            h: result.height,
           }
           this.setState({
-            sliderImages: newImagesArr
+            sliderImages: newImagesArr,
           })
           return true
         },
@@ -110,7 +110,7 @@ export default class Gallery extends Component {
             items={this.state.sliderImages}
             options={{
               index: this.state.index,
-              history: false
+              history: false,
             }}
             onClose={() => this.isOpen(false)}
           />
@@ -121,5 +121,5 @@ export default class Gallery extends Component {
 }
 
 Gallery.propTypes = {
-  images: PropTypes.array.isRequired
+  images: PropTypes.array.isRequired,
 }
